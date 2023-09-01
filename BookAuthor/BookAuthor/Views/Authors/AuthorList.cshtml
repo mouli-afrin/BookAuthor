@@ -1,0 +1,26 @@
+﻿@model List<BookAuthor.Models.Data.Author>;
+@{
+}
+<h2>Author List</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Author_Name</th>
+            <th>Book_Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var author in Model)
+        {
+            <tr>
+                <td>@author.Id</td>
+                <td>@author.Author_Name</td>
+                <td>@author.Book_Name</td>
+                <td>@author.Email</td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
